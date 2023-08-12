@@ -1,0 +1,234 @@
+@import "_variables";
+@import "_fonts";
+@import "_mixins";
+
+.wrapper-footer {
+	margin-top: 80px;
+	background-color: $footerBgcolor;
+}
+
+.footer-top {
+	padding-top: 50px;
+
+	&__heading {
+		position: relative;
+		@include blockFonts($footerTitlefont, $universalColorwhite, uppercase);
+		font-size: 24px;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 150%;
+			left: 0;
+			width: 180px;
+			height: 2px;
+			background-color: $footerMaincolor;
+		}
+	}
+	&__text {
+		padding-top: 50px;
+		font-size: calc(10px + 4 * (100vw / 1600));
+		@include blockFonts($footerTitlefont, $universalColorwhite, none);
+	}
+
+	// &__article {
+	// 	max-width: 345px;
+	// 	white-space: nowrap;
+	// 	overflow: hidden;
+	// 	text-overflow: ellipsis;
+	// }
+
+	// &__socials {
+	// 	padding-top: 55px;
+	// }
+	&__submenu {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__link {
+		width: 40px;
+		height: 40px;
+		border: 1px solid;
+		border-radius: 5px;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.5 linear;
+		&:hover {
+			background-color: rgba(207, 83, 38, 0.6);
+			color: #fff;
+		}
+	}
+
+	&__about {
+		height: 100%;
+		min-height: 100%;
+	}
+
+	&__opening {
+		min-height: 100%;
+	}
+	&__contacts {
+		min-height: 100%;
+	}
+	&__schedule {
+		padding-top: 50px;
+	}
+
+	&__weeks-list {
+		display: flex;
+		justify-content: space-between;
+		// border-bottom: 1px solid #999;
+		// line-height: 2.1;
+		padding-bottom: 15px;
+		position: relative;
+		font-size: 14px;
+		@include blockFonts($footerTitlefont, $universalColorwhite, capitalize);
+		&:before {
+			content: "";
+			position: absolute;
+			top: 55%;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: #999;
+		}
+		span {
+			display: block;
+		}
+	}
+
+	// &__contacts {
+	// 	padding-top: 30px;
+	// }
+
+	&__form {
+		padding-top: 50px;
+	}
+	&__name {
+		width: 100%;
+		border: 1px solid #999;
+		outline: none;
+		background: none;
+		padding: 5px;
+	}
+	&__number {
+		margin-top: 10px;
+		width: 100%;
+		border: 1px solid #999;
+		outline: none;
+		background: none;
+		padding: 5px;
+	}
+	&__message {
+		margin-top: 10px;
+		width: 100%;
+		height: 80px;
+		border: 1px solid #999;
+		outline: none;
+		background: none;
+		padding: 5px;
+	}
+	&__button {
+		margin-top: 10px;
+		width: 30%;
+		outline: none;
+		border: none;
+		border-radius: 3px;
+		padding: 10px;
+		text-align: center;
+		background-color: $footerMaincolor;
+		font-size: 14px;
+		@include blockFonts($footerTitlefont, $universalColorwhite, capitalize);
+	}
+}
+
+.wrapper-footer-copr {
+	margin-top: 50px;
+	background-color: #000;
+}
+.footer-copr {
+	&__text {
+		padding: 20px;
+		text-align: center;
+		font-size: calc(10px + 4 * (100vw / 1600));
+		@include blockFonts($footerTitlefont, $universalColorwhite, capitalize);
+		span {
+			color: $footerMaincolor;
+		}
+	}
+}
+
+@media (min-width: 320px) {
+	.footer-top {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		&__socials {
+			padding-top: 50px;
+		}
+
+		&__opening {
+			padding-top: 30px;
+		}
+
+		&__contacts {
+			padding-top: 30px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.footer-top {
+		padding-top: 80px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		&__socials {
+			padding-top: 20px;
+		}
+
+		&__about {
+			flex: 0 0 28%;
+		}
+		&__opening {
+			flex: 0 0 28%;
+			padding-top: 0;
+		}
+		&__contacts {
+			flex: 0 0 28%;
+			padding-top: 0;
+		}
+	}
+}
+
+@media (min-width: 991px) {
+	.footer-top {
+		padding-top: 80px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		&__socials {
+			padding-top: 45px;
+		}
+		&__about {
+			flex: 0 0 30%;
+		}
+		&__opening {
+			flex: 0 0 30%;
+			padding-top: 0;
+		}
+		&__contacts {
+			flex: 0 0 30%;
+			padding-top: 0;
+		}
+		&__text {
+			font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 320px) / 1600));
+		}
+	}
+	.footer-copr__text {
+		font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 320px) / 1600));
+	}
+}

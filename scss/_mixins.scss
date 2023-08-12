@@ -1,0 +1,24 @@
+@mixin blockFonts($fontFamily: serif, $fontColor, $fontTransform) {
+	font-family: $fontFamily;
+	color: $fontColor;
+	text-transform: $fontTransform;
+}
+
+@mixin blockFlex($flex: flex, $justify) {
+	display: $flex;
+	justify-content: $justify;
+}
+
+@mixin blockFontsfont($fontSize, $fontFamily: serif, $fontColor, $fontTransform) {
+	font-size: $fontSize;
+	font-family: $fontFamily;
+	color: $fontColor;
+	text-transform: $fontTransform;
+}
+
+@mixin aboutBlockfonts($fontFamily: serif, $fontColor, $fontTransform, $align) {
+	font-family: $fontFamily;
+	color: $fontColor;
+	text-transform: $fontTransform;
+	text-align: $align;
+}

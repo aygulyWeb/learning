@@ -1,0 +1,150 @@
+@import "_variables";
+@import "_fonts";
+@import "_mixins";
+
+.about {
+	padding-top: 140px;
+
+	&__heading {
+		@include aboutBlockfonts($aboutTitlefont, $aboutTitlecolor, uppercase, center);
+		// font-size: 60px;
+		font-size: calc(24px + 36 * (100vw / 1600));
+	}
+
+	&__color:hover {
+		color: $sliderMaincolor;
+	}
+
+	.dots-style {
+		padding-top: 30px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		position: absolute;
+		top: 0%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		overflow: hidden;
+
+		& button {
+			background-color: #555252;
+			border: none;
+			font-size: 0;
+			height: 3px;
+			width: 42px;
+			outline: none;
+			cursor: pointer;
+			transition: 0.2s ease;
+		}
+
+		& li[class="slick-active"] button {
+			background-color: #ff6600;
+		}
+	}
+
+	&__sliders {
+		padding-top: 98px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		&-text {
+			text-align: center;
+		}
+		&-icon {
+			width: 115px;
+			height: 115px;
+			border-radius: 50%;
+			border: 1px solid;
+			color: $aboutTitlecolor;
+			position: relative;
+
+			i {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 45px;
+			}
+		}
+
+		&-title {
+			@include blockFontsfont(18px, $aboutTextfont, $aboutTitlecolor, uppercase);
+			font-weight: 600;
+			padding-top: 28px;
+		}
+		&-text {
+			@include blockFontsfont(14px, $aboutTextfont, $aboutTitlecolor, lowercase);
+			padding-top: 12px;
+			line-height: 2;
+		}
+	}
+
+	&__sliders-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		position: relative;
+		overflow: hidden;
+		transition: 0.5s linear;
+
+		svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 260px;
+			height: 295px;
+			overflow: hidden;
+		}
+		.shape {
+			width: 260px;
+			height: 295px;
+			// stroke-dasharray: 140;
+			// stroke-dashoffset: 140;
+			stroke-width: 1px;
+			fill: transparent;
+			stroke: $aboutTitlecolor;
+			border-bottom: 1px solid black;
+			transition: stroke-width 0.5s, stroke-dasharray 0.5s;
+			opacity: 0;
+			visibility: hidden;
+			transition: 0.5s linear;
+		}
+
+		// &:hover .shape {
+		// 	stroke-width: 1px;
+		// 	stroke-dasharray: 70 210;
+		// 	opacity: 1;
+		// 	visibility: visible;
+		// }
+	}
+	&__items {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 5px;
+		overflow: hidden;
+		color: #000;
+	}
+}
+
+@media (min-width: 767px) {
+	.about__heading {
+		text-align: center;
+		font-size: calc(24px + (36 + 36 * 0.7) * ((100vw - 320px) / 1600));
+	}
+}
+
+@media (min-width: 991px) {
+	.about__sliders-item:hover .shape {
+		stroke-width: 1px;
+		// stroke-dasharray: 140;
+		opacity: 1;
+		visibility: visible;
+	}
+}

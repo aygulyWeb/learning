@@ -1,0 +1,62 @@
+// БЛОКИ
+@import "_header";
+@import "_navbar";
+@import "_main-slider";
+@import "_about";
+@import "_course";
+@import "_gallery";
+@import "_video";
+@import "_team";
+@import "_clients";
+@import "_blog";
+@import "_footer-top";
+
+// ПЕРЕМЕННЫЕ
+@import "_variables";
+@import "_fonts";
+@import "_mixins";
+
+.wrapper {
+	max-width: 100%;
+	background-color: $wrapperBgcolor;
+}
+
+@media (min-width: 320px) {
+	.container {
+		min-width: 320px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media (min-width: 481px) {
+	.container {
+		min-width: 481px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media (min-width: 767px) {
+	.container {
+		min-width: 767px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media (min-width: 991px) {
+	.container {
+		max-width: 1170px;
+		margin: 0 auto;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}

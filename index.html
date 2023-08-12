@@ -1,0 +1,2532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="libs/slick/css/slick.css" />
+    <title>Learning</title>
+  </head>
+
+  <body>
+    <header id="header" class="wrapper">
+      <div class="container">
+        <div class="top-header">
+          <div class="top-header__contact">
+            <div class="top-header__phone">
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+123123456789">123-123456789</a>
+            </div>
+            <div class="top-header__info">
+              <i class="fas fa-envelope"></i>
+              <a href="info@learnplus.com">info@learnplus.com</a>
+            </div>
+            <div class="top-header__menu">
+              <input
+                type="radio"
+                name="burger"
+                id="burger"
+                class="top-header__input"
+              />
+              <label for="burger" class="top-header__toggle">
+                <i class="fas fa-bars"></i>
+              </label>
+              <div class="top-header__burger-menu">
+                <input
+                  type="radio"
+                  name="burger"
+                  id="burger2"
+                  class="top-header__input2"
+                />
+                <label for="burger2" class="top-header__toggle2">
+                  <i class="fas fa-bars"></i>
+                </label>
+                <ul class="top-header__submenu">
+                  <li class="top-header__list"><a href="#">home</a></li>
+                  <li class="top-header__list"><a href="#">about us</a></li>
+                  <li class="top-header__list"><a href="#">courses</a></li>
+                  <li class="top-header__list"><a href="#">gallery</a></li>
+                  <li class="top-header__list"><a href="#">teachers</a></li>
+                  <li class="top-header__list"><a href="#">blog</a></li>
+                  <li class="top-header__list"><a href="#">contact us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="top-header__login">
+            <ul class="top-header__submenu-login">
+              <li class="top-header__list-login"><a href="#">faq</a></li>
+              <li class="top-header__list-login"><a href="#">site map</a></li>
+              <li class="top-header__list-login">
+                <a href="#">terms of use</a>
+              </li>
+              <li class="top-header__list-login"><a href="#">language</a></li>
+              <li class="top-header__list-login">
+                <a href="#"><i class="fas fa-lock"></i></a>
+              </li>
+              <li class="top-header__list-login">
+                <a href="#popup">login/register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#header" class="popup__close">
+            <i class="fas fa-times"></i>
+          </a>
+          <div class="popup__title">login/register</div>
+          <form action="#" class="popup__form">
+            <div class="popup__login">
+              <label for="#">email</label>
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="popup__password">
+              <label for="#">password</label>
+              <input type="password" placeholder="Passwords" />
+            </div>
+            <div class="popup__sign">
+              <input type="checkbox" id="sign" />
+              <label for="sign">keep me signed in</label>
+            </div>
+            <div class="popup__button">
+              <button>sign in</button>
+            </div>
+            <div class="popup__question">
+              <span>forgot password?</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <nav class="container">
+      <div class="menu">
+        <div class="menu__logo">
+          <img src="images/header-logo.webp" alt="#" />
+          <a href="#">learning</a>
+        </div>
+        <div class="menu__navigation">
+          <div class="menu__navbar">
+            <ul class="menu__submenu">
+              <li class="menu__list"><a href="#">home</a></li>
+              <li class="menu__list"><a href="#">about us</a></li>
+              <li class="menu__list"><a href="#">courses</a></li>
+              <li class="menu__list"><a href="#">gallery</a></li>
+              <li class="menu__list"><a href="#">teachers</a></li>
+              <li class="menu__list"><a href="#">blog</a></li>
+              <li class="menu__list"><a href="#">contact us</a></li>
+            </ul>
+          </div>
+          <div class="menu__search">
+            <input type="checkbox" id="search" class="search__input" />
+            <label for="search" class="search__toggle">
+              <i class="fas fa-search"></i>
+            </label>
+            <input type="search" class="submit__input" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="main-slider">
+        <div class="sliders">
+          <div class="slider-item">
+            <div class="prev-img">
+              <i class="fas fa-chevron-right"></i
+              ><img class="prevbtnimg" src="images/main-slider-3.webp" />
+            </div>
+            <div class="next-img">
+              <i class="fas fa-chevron-left"></i
+              ><img class="nextbtnimg" src="images/main-slider-2.webp" />
+            </div>
+            <div class="slider__image">
+              <img src="images/main-slider-1.webp" alt="#" />
+              <div class="slider__image-bg"></div>
+            </div>
+            <div class="slider__text">
+              <p class="slider-item__title">
+                <span>education</span> & courses organization
+              </p>
+              <p class="slider-item__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Debitis neque, quo alias blanditiis perspiciatis soluta
+                pariatur, quam quasi eius sequi repellat quia est possimus
+                facere.
+              </p>
+              <a href="#" class="slider-item__button">know more</a>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="prev-img">
+              <i class="fas fa-chevron-right"></i
+              ><img class="prevbtnimg" src="images/main-slider-1.webp" />
+            </div>
+            <div class="next-img">
+              <i class="fas fa-chevron-left"></i
+              ><img class="nextbtnimg" src="images/main-slider-3.webp" />
+            </div>
+            <div class="slider__image">
+              <img src="images/main-slider-2.webp" alt="#" />
+              <div class="slider__image-bg"></div>
+            </div>
+            <div class="slider__text">
+              <p class="slider-item__title">
+                <span>education</span> & courses organization
+              </p>
+              <p class="slider-item__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Debitis neque, quo alias blanditiis perspiciatis soluta
+                pariatur, quam quasi eius sequi repellat quia est possimus
+                facere.
+              </p>
+              <a href="#" class="slider-item__button">know more</a>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="prev-img">
+              <i class="fas fa-chevron-right"></i
+              ><img class="prevbtnimg" src="images/main-slider-2.webp" />
+            </div>
+            <div class="next-img">
+              <i class="fas fa-chevron-left"></i
+              ><img class="nextbtnimg" src="images/main-slider-1.webp" />
+            </div>
+            <div class="slider__image">
+              <img src="images/main-slider-3.webp" alt="#" />
+              <div class="slider__image-bg"></div>
+            </div>
+            <div class="slider__text">
+              <p class="slider-item__title">
+                <span>education</span> & courses organization
+              </p>
+              <p class="slider-item__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Debitis neque, quo alias blanditiis perspiciatis soluta
+                pariatur, quam quasi eius sequi repellat quia est possimus
+                facere.
+              </p>
+              <a href="#" class="slider-item__button">know more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="about animate__animated animate__fadeInDownBig">
+          <div class="about__heading">
+            <p class="about__heading-us">about us</p>
+          </div>
+          <div class="about__sliders">
+            <div class="about__sliders-item">
+              <div class="about__items">
+                <div class="about__sliders-icon">
+                  <i class="fas fa-medal about__color"></i>
+                </div>
+                <p class="about__sliders-title about__color">expert teachers</p>
+                <p class="about__sliders-text about__color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem nihil velit maiores sequi sit debitis, praesentium
+                  quod consectetur exercitationem deserunt?
+                </p>
+              </div>
+              <svg>
+                <rect class="shape" height="295" width="260" />
+              </svg>
+            </div>
+            <div class="about__sliders-item">
+              <div class="about__items">
+                <div class="about__sliders-icon">
+                  <i class="fas fa-id-card-alt about__color"></i>
+                </div>
+                <p class="about__sliders-title about__color">expert teachers</p>
+                <p class="about__sliders-text about__color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem nihil velit maiores sequi sit debitis, praesentium
+                  quod consectetur exercitationem deserunt?
+                </p>
+              </div>
+              <svg>
+                <rect class="shape" height="295" width="260" />
+              </svg>
+            </div>
+            <div class="about__sliders-item">
+              <div class="about__items">
+                <div class="about__sliders-icon">
+                  <i class="fas fa-microphone about__color"></i>
+                </div>
+                <p class="about__sliders-title about__color">expert teachers</p>
+                <p class="about__sliders-text about__color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem nihil velit maiores sequi sit debitis, praesentium
+                  quod consectetur exercitationem deserunt?
+                </p>
+              </div>
+              <svg>
+                <rect class="shape" height="295" width="260" />
+              </svg>
+            </div>
+            <div class="about__sliders-item">
+              <div class="about__items">
+                <div class="about__sliders-icon">
+                  <i class="fas fa-video about__color"></i>
+                </div>
+                <p class="about__sliders-title about__color">expert teachers</p>
+                <p class="about__sliders-text about__color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem nihil velit maiores sequi sit debitis, praesentium
+                  quod consectetur exercitationem deserunt?
+                </p>
+              </div>
+              <svg>
+                <rect class="shape" height="295" width="260" />
+              </svg>
+            </div>
+            <div class="about__sliders-item">
+              <div class="about__items">
+                <div class="about__sliders-icon">
+                  <i class="fas fa-medal about__color"></i>
+                </div>
+                <p class="about__sliders-title about__color">expert teachers</p>
+                <p class="about__sliders-text about__color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem nihil velit maiores sequi sit debitis, praesentium
+                  quod consectetur exercitationem deserunt?
+                </p>
+              </div>
+              <svg>
+                <rect class="shape" height="295" width="260" />
+              </svg>
+            </div>
+            <div class="about__sliders-item">
+              <div class="about__items">
+                <div class="about__sliders-icon">
+                  <i class="fas fa-id-card-alt about__color"></i>
+                </div>
+                <p class="about__sliders-title about__color">expert teachers</p>
+                <p class="about__sliders-text about__color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem nihil velit maiores sequi sit debitis, praesentium
+                  quod consectetur exercitationem deserunt?
+                </p>
+              </div>
+              <svg>
+                <rect class="shape" height="295" width="260" />
+              </svg>
+            </div>
+            <div class="about__sliders-item">
+              <div class="about__items">
+                <div class="about__sliders-icon">
+                  <i class="fas fa-microphone about__color"></i>
+                </div>
+                <p class="about__sliders-title about__color">expert teachers</p>
+                <p class="about__sliders-text about__color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem nihil velit maiores sequi sit debitis, praesentium
+                  quod consectetur exercitationem deserunt?
+                </p>
+              </div>
+              <svg>
+                <rect class="shape" height="295" width="260" />
+              </svg>
+            </div>
+            <div class="about__sliders-item">
+              <div class="about__items">
+                <div class="about__sliders-icon">
+                  <i class="fas fa-video about__color"></i>
+                </div>
+                <p class="about__sliders-title about__color">expert teachers</p>
+                <p class="about__sliders-text about__color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem nihil velit maiores sequi sit debitis, praesentium
+                  quod consectetur exercitationem deserunt?
+                </p>
+              </div>
+              <svg>
+                <rect class="shape" height="295" width="260" />
+              </svg>
+            </div>
+            <div class="about__sliders-item">
+              <div class="about__items">
+                <div class="about__sliders-icon">
+                  <i class="fas fa-medal about__color"></i>
+                </div>
+                <p class="about__sliders-title about__color">expert teachers</p>
+                <p class="about__sliders-text about__color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem nihil velit maiores sequi sit debitis, praesentium
+                  quod consectetur exercitationem deserunt?
+                </p>
+              </div>
+              <svg>
+                <rect class="shape" height="295" width="260" />
+              </svg>
+            </div>
+            <div class="about__sliders-item">
+              <div class="about__items">
+                <div class="about__sliders-icon">
+                  <i class="fas fa-id-card-alt about__color"></i>
+                </div>
+                <p class="about__sliders-title about__color">expert teachers</p>
+                <p class="about__sliders-text about__color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem nihil velit maiores sequi sit debitis, praesentium
+                  quod consectetur exercitationem deserunt?
+                </p>
+              </div>
+              <svg>
+                <rect class="shape" height="295" width="260" />
+              </svg>
+            </div>
+            <div class="about__sliders-item">
+              <div class="about__items">
+                <div class="about__sliders-icon">
+                  <i class="fas fa-microphone about__color"></i>
+                </div>
+                <p class="about__sliders-title about__color">expert teachers</p>
+                <p class="about__sliders-text about__color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem nihil velit maiores sequi sit debitis, praesentium
+                  quod consectetur exercitationem deserunt?
+                </p>
+              </div>
+              <svg>
+                <rect class="shape" height="295" width="260" />
+              </svg>
+            </div>
+            <div class="about__sliders-item">
+              <div class="about__items">
+                <div class="about__sliders-icon">
+                  <i class="fas fa-video about__color"></i>
+                </div>
+                <p class="about__sliders-title about__color">expert teachers</p>
+                <p class="about__sliders-text about__color">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem nihil velit maiores sequi sit debitis, praesentium
+                  quod consectetur exercitationem deserunt?
+                </p>
+              </div>
+              <svg>
+                <rect class="shape" height="295" width="260" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper-course">
+        <div class="wrapper-course-bg">
+          <img class="back" src="images/course-bg-image.webp" alt="" />
+        </div>
+        <div class="course">
+          <div class="container">
+            <div class="course__heading">
+              <p class="course__latest">latest course</p>
+            </div>
+            <div class="course__sliders">
+              <div class="course__items">
+                <div class="course__image">
+                  <img src="images/course-images-1.webp" alt="" />
+                  <div class="course__image-bg"></div>
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="course__cart">
+                  <div class="course__cart-title">
+                    <p class="course__cart-text">
+                      philosophy, politics and economics (ppe)
+                    </p>
+                  </div>
+                  <div class="course__views">
+                    <div class="course__views-students">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span>745 students</span>
+                    </div>
+                    <div class="course__views-rating" data-total-value="0">
+                      <div class="rating__items" data-item-value="5">★</div>
+                      <div class="rating__items" data-item-value="4">★</div>
+                      <div class="rating__items" data-item-value="3">★</div>
+                      <div class="rating__items" data-item-value="2">★</div>
+                      <div class="rating__items" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                  <div class="course__views-buttons">
+                    <button class="course__views-btn">free</button>
+                    <button class="course__views-btn">details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="course__items">
+                <div class="course__image">
+                  <img src="images/course-images-2.webp" alt="" />
+                  <div class="course__image-bg"></div>
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="course__cart">
+                  <div class="course__cart-title">
+                    <p class="course__cart-text">
+                      philosophy, politics and economics (ppe)
+                    </p>
+                  </div>
+                  <div class="course__views">
+                    <div class="course__views-students">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span>745 students</span>
+                    </div>
+                    <div class="course__views-rating" data-total-value="0">
+                      <div class="rating__items" data-item-value="5">★</div>
+                      <div class="rating__items" data-item-value="4">★</div>
+                      <div class="rating__items" data-item-value="3">★</div>
+                      <div class="rating__items" data-item-value="2">★</div>
+                      <div class="rating__items" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                  <div class="course__views-buttons">
+                    <button class="course__views-btn">free</button>
+                    <button class="course__views-btn">details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="course__items">
+                <div class="course__image">
+                  <img src="images/course-images-3.webp" alt="" />
+                  <div class="course__image-bg"></div>
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="course__cart">
+                  <div class="course__cart-title">
+                    <p class="course__cart-text">
+                      philosophy, politics and economics (ppe)
+                    </p>
+                  </div>
+                  <div class="course__views">
+                    <div class="course__views-students">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span>745 students</span>
+                    </div>
+                    <div class="course__views-rating" data-total-value="0">
+                      <div class="rating__items" data-item-value="5">★</div>
+                      <div class="rating__items" data-item-value="4">★</div>
+                      <div class="rating__items" data-item-value="3">★</div>
+                      <div class="rating__items" data-item-value="2">★</div>
+                      <div class="rating__items" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                  <div class="course__views-buttons">
+                    <button class="course__views-btn">free</button>
+                    <button class="course__views-btn">details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="course__items">
+                <div class="course__image">
+                  <img src="images/course-images-1.webp" alt="" />
+                  <div class="course__image-bg"></div>
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="course__cart">
+                  <div class="course__cart-title">
+                    <p class="course__cart-text">
+                      philosophy, politics and economics (ppe)
+                    </p>
+                  </div>
+                  <div class="course__views">
+                    <div class="course__views-students">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span>745 students</span>
+                    </div>
+                    <div class="course__views-rating" data-total-value="0">
+                      <div class="rating__items" data-item-value="5">★</div>
+                      <div class="rating__items" data-item-value="4">★</div>
+                      <div class="rating__items" data-item-value="3">★</div>
+                      <div class="rating__items" data-item-value="2">★</div>
+                      <div class="rating__items" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                  <div class="course__views-buttons">
+                    <button class="course__views-btn">free</button>
+                    <button class="course__views-btn">details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="course__items">
+                <div class="course__image">
+                  <img src="images/course-images-2.webp" alt="" />
+                  <div class="course__image-bg"></div>
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="course__cart">
+                  <div class="course__cart-title">
+                    <p class="course__cart-text">
+                      philosophy, politics and economics (ppe)
+                    </p>
+                  </div>
+                  <div class="course__views">
+                    <div class="course__views-students">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span>745 students</span>
+                    </div>
+                    <div class="course__views-rating" data-total-value="0">
+                      <div class="rating__items" data-item-value="5">★</div>
+                      <div class="rating__items" data-item-value="4">★</div>
+                      <div class="rating__items" data-item-value="3">★</div>
+                      <div class="rating__items" data-item-value="2">★</div>
+                      <div class="rating__items" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                  <div class="course__views-buttons">
+                    <button class="course__views-btn">free</button>
+                    <button class="course__views-btn">details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="course__items">
+                <div class="course__image">
+                  <img src="images/course-images-3.webp" alt="" />
+                  <div class="course__image-bg"></div>
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="course__cart">
+                  <div class="course__cart-title">
+                    <p class="course__cart-text">
+                      philosophy, politics and economics (ppe)
+                    </p>
+                  </div>
+                  <div class="course__views">
+                    <div class="course__views-students">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span>745 students</span>
+                    </div>
+                    <div class="course__views-rating" data-total-value="0">
+                      <div class="rating__items" data-item-value="5">★</div>
+                      <div class="rating__items" data-item-value="4">★</div>
+                      <div class="rating__items" data-item-value="3">★</div>
+                      <div class="rating__items" data-item-value="2">★</div>
+                      <div class="rating__items" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                  <div class="course__views-buttons">
+                    <button class="course__views-btn">free</button>
+                    <button class="course__views-btn">details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="course__items">
+                <div class="course__image">
+                  <img src="images/course-images-1.webp" alt="" />
+                  <div class="course__image-bg"></div>
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="course__cart">
+                  <div class="course__cart-title">
+                    <p class="course__cart-text">
+                      philosophy, politics and economics (ppe)
+                    </p>
+                  </div>
+                  <div class="course__views">
+                    <div class="course__views-students">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span>745 students</span>
+                    </div>
+                    <div class="course__views-rating" data-total-value="0">
+                      <div class="rating__items" data-item-value="5">★</div>
+                      <div class="rating__items" data-item-value="4">★</div>
+                      <div class="rating__items" data-item-value="3">★</div>
+                      <div class="rating__items" data-item-value="2">★</div>
+                      <div class="rating__items" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                  <div class="course__views-buttons">
+                    <button class="course__views-btn">free</button>
+                    <button class="course__views-btn">details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="course__items">
+                <div class="course__image">
+                  <img src="images/course-images-2.webp" alt="" />
+                  <div class="course__image-bg"></div>
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="course__cart">
+                  <div class="course__cart-title">
+                    <p class="course__cart-text">
+                      philosophy, politics and economics (ppe)
+                    </p>
+                  </div>
+                  <div class="course__views">
+                    <div class="course__views-students">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span>745 students</span>
+                    </div>
+                    <div class="course__views-rating" data-total-value="0">
+                      <div class="rating__items" data-item-value="5">★</div>
+                      <div class="rating__items" data-item-value="4">★</div>
+                      <div class="rating__items" data-item-value="3">★</div>
+                      <div class="rating__items" data-item-value="2">★</div>
+                      <div class="rating__items" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                  <div class="course__views-buttons">
+                    <button class="course__views-btn">free</button>
+                    <button class="course__views-btn">details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="course__items">
+                <div class="course__image">
+                  <img src="images/course-images-3.webp" alt="" />
+                  <div class="course__image-bg"></div>
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="course__cart">
+                  <div class="course__cart-title">
+                    <p class="course__cart-text">
+                      philosophy, politics and economics (ppe)
+                    </p>
+                  </div>
+                  <div class="course__views">
+                    <div class="course__views-students">
+                      <i class="fas fa-graduation-cap"></i>
+                      <span>745 students</span>
+                    </div>
+                    <div class="course__views-rating" data-total-value="0">
+                      <div class="rating__items" data-item-value="5">★</div>
+                      <div class="rating__items" data-item-value="4">★</div>
+                      <div class="rating__items" data-item-value="3">★</div>
+                      <div class="rating__items" data-item-value="2">★</div>
+                      <div class="rating__items" data-item-value="1">★</div>
+                    </div>
+                  </div>
+                  <div class="course__views-buttons">
+                    <button class="course__views-btn">free</button>
+                    <button class="course__views-btn">details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="gallery">
+          <div class="gallery__heading">
+            <p class="gallery__heading-title">gallery</p>
+          </div>
+          <div class="tabs">
+            <div class="tabs-triggers">
+              <a href="#tab-1" class="tabs-triggers__item">all</a>
+              <a href="#tab-2" class="tabs-triggers__item">day tour</a>
+              <a href="#tab-3" class="tabs-triggers__item">travel tour</a>
+              <a href="#tab-4" class="tabs-triggers__item">picnic</a>
+              <a href="#tab-5" class="tabs-triggers__item">champus</a>
+            </div>
+            <div class="tabs-content">
+              <div id="tab-1" class="tabs-content__item">
+                <div class="tabs-content__block">
+                  <div class="tabs-content__block-item">
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-1.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <button
+                            onClick="Toggle1()"
+                            id="btn1"
+                            class="tabs-content__link"
+                          >
+                            <i class="fas fa-heart"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-2.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <button
+                            onClick="Toggle2()"
+                            id="btn2"
+                            class="tabs-content__link"
+                          >
+                            <i class="fas fa-heart"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-3.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <button
+                            onClick="Toggle3()"
+                            id="btn3"
+                            class="tabs-content__link"
+                          >
+                            <i class="fas fa-heart"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-4.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <button
+                            onClick="Toggle4()"
+                            id="btn4"
+                            class="tabs-content__link"
+                          >
+                            <i class="fas fa-heart"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-1.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <button
+                            onClick="Toggle5()"
+                            id="btn5"
+                            class="tabs-content__link"
+                          >
+                            <i class="fas fa-heart"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-2.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <button
+                            onClick="Toggle6()"
+                            id="btn6"
+                            class="tabs-content__link"
+                          >
+                            <i class="fas fa-heart"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-3.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <button
+                            onClick="Toggle7()"
+                            id="btn7"
+                            class="tabs-content__link"
+                          >
+                            <i class="fas fa-heart"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-4.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <button
+                            onClick="Toggle8()"
+                            id="btn8"
+                            class="tabs-content__link"
+                          >
+                            <i class="fas fa-heart"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-2" class="tabs-content__item">
+                <div class="tabs-content__block">
+                  <div class="tabs-content__block-item">
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-1.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-2.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-3.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-4.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-1.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-2.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-3" class="tabs-content__item">
+                <div class="tabs-content__block">
+                  <div class="tabs-content__block-item">
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-1.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-2.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-3.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-4.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-1.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-4" class="tabs-content__item">
+                <div class="tabs-content__block">
+                  <div class="tabs-content__block-item">
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-1.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-2.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-3.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-4.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-1.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-5" class="tabs-content__item">
+                <div class="tabs-content__block">
+                  <div class="tabs-content__block-item">
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-1.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-2.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-3.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-4.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-1.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tabs__images">
+                      <img src="images/gallery-photos-2.webp" alt="#" />
+                      <ul class="tabs-content__icons">
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-link"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="fas fa-search"></i
+                          ></a>
+                        </li>
+                        <li class="tabs-content__list">
+                          <a class="tabs-content__link" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper-video">
+        <div class="container">
+          <div class="video">
+            <div class="video-image">
+              <img src="images/video-macbook.webp" alt="#" />
+              <div class="video-block">
+                <video
+                  poster="images/video-poster.webp"
+                  controls
+                  muted
+                  class="video__item"
+                >
+                  <source
+                    src="video/MacBook Air — Lightness — Apple.webm"
+                    type="video/webm"
+                  />
+                  <source
+                    src="video/MacBook Air — Lightness — Apple.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="video-bg">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="team">
+          <div class="team__heading">
+            <p class="team__head">teachers</p>
+          </div>
+          <div class="team-sliders">
+            <div class="team-sliders__items">
+              <div class="team-sliders__image">
+                <img src="images/team-1.webp" alt="#" />
+                <div class="team-sliders__content">
+                  <div class="team-sliders__title">jenny doe</div>
+                  <div class="team-sliders__subtitle">
+                    proffessor of mathematic
+                  </div>
+                  <div class="team-sliders__icons">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-google"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-sliders__items">
+              <div class="team-sliders__image">
+                <img src="images/team-2.webp" alt="#" />
+                <div class="team-sliders__content">
+                  <div class="team-sliders__title">jenny doe</div>
+                  <div class="team-sliders__subtitle">
+                    proffessor of mathematic
+                  </div>
+                  <div class="team-sliders__icons">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-google"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-sliders__items">
+              <div class="team-sliders__image">
+                <img src="images/team-3.webp" alt="#" />
+                <div class="team-sliders__content">
+                  <div class="team-sliders__title">jenny doe</div>
+                  <div class="team-sliders__subtitle">
+                    proffessor of mathematic
+                  </div>
+                  <div class="team-sliders__icons">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-google"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-sliders__items">
+              <div class="team-sliders__image">
+                <img src="images/team-4.webp" alt="#" />
+                <div class="team-sliders__content">
+                  <div class="team-sliders__title">jenny doe</div>
+                  <div class="team-sliders__subtitle">
+                    proffessor of mathematic
+                  </div>
+                  <div class="team-sliders__icons">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-google"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-sliders__items">
+              <div class="team-sliders__image">
+                <img src="images/team-1.webp" alt="#" />
+                <div class="team-sliders__content">
+                  <div class="team-sliders__title">jenny doe</div>
+                  <div class="team-sliders__subtitle">
+                    proffessor of mathematic
+                  </div>
+                  <div class="team-sliders__icons">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-google"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-sliders__items">
+              <div class="team-sliders__image">
+                <img src="images/team-2.webp" alt="#" />
+                <div class="team-sliders__content">
+                  <div class="team-sliders__title">jenny doe</div>
+                  <div class="team-sliders__subtitle">
+                    proffessor of mathematic
+                  </div>
+                  <div class="team-sliders__icons">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-google"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-sliders__items">
+              <div class="team-sliders__image">
+                <img src="images/team-3.webp" alt="#" />
+                <div class="team-sliders__content">
+                  <div class="team-sliders__title">jenny doe</div>
+                  <div class="team-sliders__subtitle">
+                    proffessor of mathematic
+                  </div>
+                  <div class="team-sliders__icons">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-google"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-sliders__items">
+              <div class="team-sliders__image">
+                <img src="images/team-4.webp" alt="#" />
+                <div class="team-sliders__content">
+                  <div class="team-sliders__title">jenny doe</div>
+                  <div class="team-sliders__subtitle">
+                    proffessor of mathematic
+                  </div>
+                  <div class="team-sliders__icons">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-google"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-sliders__items">
+              <div class="team-sliders__image">
+                <img src="images/team-1.webp" alt="#" />
+                <div class="team-sliders__content">
+                  <div class="team-sliders__title">jenny doe</div>
+                  <div class="team-sliders__subtitle">
+                    proffessor of mathematic
+                  </div>
+                  <div class="team-sliders__icons">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-google"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-sliders__items">
+              <div class="team-sliders__image">
+                <img src="images/team-2.webp" alt="#" />
+                <div class="team-sliders__content">
+                  <div class="team-sliders__title">jenny doe</div>
+                  <div class="team-sliders__subtitle">
+                    proffessor of mathematic
+                  </div>
+                  <div class="team-sliders__icons">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-google"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-sliders__items">
+              <div class="team-sliders__image">
+                <img src="images/team-3.webp" alt="#" />
+                <div class="team-sliders__content">
+                  <div class="team-sliders__title">jenny doe</div>
+                  <div class="team-sliders__subtitle">
+                    proffessor of mathematic
+                  </div>
+                  <div class="team-sliders__icons">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-google"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-sliders__items">
+              <div class="team-sliders__image">
+                <img src="images/team-4.webp" alt="#" />
+                <div class="team-sliders__content">
+                  <div class="team-sliders__title">jenny doe</div>
+                  <div class="team-sliders__subtitle">
+                    proffessor of mathematic
+                  </div>
+                  <div class="team-sliders__icons">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-google"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      class="team-sliders__link"
+                    >
+                      <i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper-clients">
+        <div class="container">
+          <div class="clients">
+            <div class="clients__heading">our campus</div>
+            <div class="clients-sliders">
+              <div class="clients-sliders__item">
+                <div class="clients-sliders__link">
+                  <a href="#"><img src="images/clients-1.webp" alt="#" /></a>
+                  <div class="clients-sliders__bg">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-sliders__item">
+                <div class="clients-sliders__link">
+                  <a href="#"><img src="images/clients-2.webp" alt="#" /></a>
+                  <div class="clients-sliders__bg">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-sliders__item">
+                <div class="clients-sliders__link">
+                  <a href="#"><img src="images/clients-3.webp" alt="#" /></a>
+                  <div class="clients-sliders__bg">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-sliders__item">
+                <div class="clients-sliders__link">
+                  <a href="#"><img src="images/clients-4.webp" alt="#" /></a>
+                  <div class="clients-sliders__bg">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-sliders__item">
+                <div class="clients-sliders__link">
+                  <a href="#"><img src="images/clients-1.webp" alt="#" /></a>
+                  <div class="clients-sliders__bg">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-sliders__item">
+                <div class="clients-sliders__link">
+                  <a href="#"><img src="images/clients-2.webp" alt="#" /></a>
+                  <div class="clients-sliders__bg">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-sliders__item">
+                <div class="clients-sliders__link">
+                  <a href="#"><img src="images/clients-3.webp" alt="#" /></a>
+                  <div class="clients-sliders__bg">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-sliders__item">
+                <div class="clients-sliders__link">
+                  <a href="#"><img src="images/clients-4.webp" alt="#" /></a>
+                  <div class="clients-sliders__bg">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-sliders__item">
+                <div class="clients-sliders__link">
+                  <a href="#"><img src="images/clients-1.webp" alt="#" /></a>
+                  <div class="clients-sliders__bg">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-sliders__item">
+                <div class="clients-sliders__link">
+                  <a href="#"><img src="images/clients-2.webp" alt="#" /></a>
+                  <div class="clients-sliders__bg">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-sliders__item">
+                <div class="clients-sliders__link">
+                  <a href="#"><img src="images/clients-3.webp" alt="#" /></a>
+                  <div class="clients-sliders__bg">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="clients-sliders__item">
+                <div class="clients-sliders__link">
+                  <a href="#"><img src="images/clients-4.webp" alt="#" /></a>
+                  <div class="clients-sliders__bg">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="blog">
+          <div class="blog__heading">faqs & news</div>
+          <div class="blog-content animate__animated animate__bounceInLeft">
+            <div class="blog-content__instructors">
+              <div class="blog-content__heading">our instructors</div>
+              <div class="blog-content__accordion">
+                <div class="blog-content__item">
+                  <input
+                    type="radio"
+                    name="accordion"
+                    id="accordion1"
+                    checked
+                    class="blog-content__input"
+                  />
+                  <label for="accordion1" class="blog-content__toggle">
+                    <div class="blog-content__icon">
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <span class="blog-content__title">nathan burk</span>
+                  </label>
+                  <div class="blog-content__cart">
+                    <div class="blog-content__image">
+                      <img src="images/blog-image.png" alt="#" />
+                    </div>
+                    <div class="blog-content__text">
+                      <div class="blog-content__subtitle">
+                        <p>economics, finance</p>
+                        <p>undergraduate</p>
+                      </div>
+                      <div class="blog-content__article">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Quas, aliquam?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-content__item">
+                  <input
+                    type="radio"
+                    name="accordion"
+                    id="accordion2"
+                    class="blog-content__input"
+                  />
+                  <label for="accordion2" class="blog-content__toggle">
+                    <div class="blog-content__icon">
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <span class="blog-content__title">jessica cafrey</span>
+                  </label>
+                  <div class="blog-content__cart">
+                    <div class="blog-content__image">
+                      <img src="images/blog-image.png" alt="#" />
+                    </div>
+                    <div class="blog-content__text">
+                      <div class="blog-content__subtitle">
+                        <p>economics, finance</p>
+                        <p>undergraduate</p>
+                      </div>
+                      <div class="blog-content__article">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Quas, aliquam?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-content__item">
+                  <input
+                    type="radio"
+                    name="accordion"
+                    id="accordion3"
+                    class="blog-content__input"
+                  />
+                  <label for="accordion3" class="blog-content__toggle">
+                    <div class="blog-content__icon">
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <span class="blog-content__title">michael delancey</span>
+                  </label>
+                  <div class="blog-content__cart">
+                    <div class="blog-content__image">
+                      <img src="images/blog-image.png" alt="#" />
+                    </div>
+                    <div class="blog-content__text">
+                      <div class="blog-content__subtitle">
+                        <p>economics, finance</p>
+                        <p>undergraduate</p>
+                      </div>
+                      <div class="blog-content__article">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Quas, aliquam?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-content__item">
+                  <input
+                    type="radio"
+                    name="accordion"
+                    id="accordion4"
+                    class="blog-content__input"
+                  />
+                  <label for="accordion4" class="blog-content__toggle">
+                    <div class="blog-content__icon">
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <span class="blog-content__title">amanda shepard</span>
+                  </label>
+                  <div class="blog-content__cart">
+                    <div class="blog-content__image">
+                      <img src="images/blog-image.png" alt="#" />
+                    </div>
+                    <div class="blog-content__text">
+                      <div class="blog-content__subtitle">
+                        <p>economics, finance</p>
+                        <p>undergraduate</p>
+                      </div>
+                      <div class="blog-content__article">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Quas, aliquam?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-content__item">
+                  <input
+                    type="radio"
+                    name="accordion"
+                    id="accordion5"
+                    class="blog-content__input"
+                  />
+                  <label for="accordion5" class="blog-content__toggle">
+                    <div class="blog-content__icon">
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <span class="blog-content__title">john Doe</span>
+                  </label>
+                  <div class="blog-content__cart">
+                    <div class="blog-content__image">
+                      <img src="images/blog-image.png" alt="#" />
+                    </div>
+                    <div class="blog-content__text">
+                      <div class="blog-content__subtitle">
+                        <p>economics, finance</p>
+                        <p>undergraduate</p>
+                      </div>
+                      <div class="blog-content__article">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Quas, aliquam?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-content__item">
+                  <input
+                    type="radio"
+                    name="accordion"
+                    id="accordion6"
+                    class="blog-content__input"
+                  />
+                  <label for="accordion6" class="blog-content__toggle">
+                    <div class="blog-content__icon">
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <span class="blog-content__title">jenny anderson</span>
+                  </label>
+                  <div class="blog-content__cart">
+                    <div class="blog-content__image">
+                      <img src="images/blog-image.png" alt="#" />
+                    </div>
+                    <div class="blog-content__text">
+                      <div class="blog-content__subtitle">
+                        <p>economics, finance</p>
+                        <p>undergraduate</p>
+                      </div>
+                      <div class="blog-content__article">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Quas, aliquam?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-content__item">
+                  <input
+                    type="radio"
+                    name="accordion"
+                    id="accordion7"
+                    class="blog-content__input"
+                  />
+                  <label for="accordion7" class="blog-content__toggle">
+                    <div class="blog-content__icon">
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <span class="blog-content__title">victor stanton</span>
+                  </label>
+                  <div class="blog-content__cart">
+                    <div class="blog-content__image">
+                      <img src="images/blog-image.png" alt="#" />
+                    </div>
+                    <div class="blog-content__text">
+                      <div class="blog-content__subtitle">
+                        <p>economics, finance</p>
+                        <p>undergraduate</p>
+                      </div>
+                      <div class="blog-content__article">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Quas, aliquam?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-content__news">
+              <div class="blog-content__heading">our blog</div>
+              <div class="blog-slider">
+                <div class="blog-content__sliders">
+                  <div class="blog-slide">
+                    <div class="blog-slide__item">
+                      <div class="blog-slide__image">
+                        <img src="images/course-images-1.webp" alt="#" />
+                      </div>
+                      <div class="blog-slide__text">
+                        <time class="blog-slide__time" datetime="2015-03"
+                          >march mon 2015</time
+                        >
+                        <p class="blog-slide__title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde, quisquam.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="blog-slide__item">
+                      <div class="blog-slide__image">
+                        <img src="images/course-images-2.webp" alt="#" />
+                      </div>
+                      <div class="blog-slide__text">
+                        <time class="blog-slide__time" datetime="2015-03"
+                          >march mon 2015</time
+                        >
+                        <p class="blog-slide__title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde, quisquam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-content__sliders-text">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Praesentium, in.
+                    </p>
+                  </div>
+                  <div class="blog-content__sliders-button">
+                    <a href="#" class="blog-content__sliders-link">read more</a>
+                  </div>
+                </div>
+                <div class="blog-content__sliders">
+                  <div class="blog-slide">
+                    <div class="blog-slide__item">
+                      <div class="blog-slide__image">
+                        <img src="images/course-images-1.webp" alt="#" />
+                      </div>
+                      <div class="blog-slide__text">
+                        <time class="blog-slide__time" datetime="2015-03"
+                          >march mon 2015</time
+                        >
+                        <p class="blog-slide__title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde, quisquam.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="blog-slide__item">
+                      <div class="blog-slide__image">
+                        <img src="images/course-images-2.webp" alt="#" />
+                      </div>
+                      <div class="blog-slide__text">
+                        <time class="blog-slide__time" datetime="2015-03"
+                          >march mon 2015</time
+                        >
+                        <p class="blog-slide__title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde, quisquam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-content__sliders-text">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Praesentium, in.
+                    </p>
+                  </div>
+                  <div class="blog-content__sliders-button">
+                    <a href="#" class="blog-content__sliders-link">read more</a>
+                  </div>
+                </div>
+                <div class="blog-content__sliders">
+                  <div class="blog-slide">
+                    <div class="blog-slide__item">
+                      <div class="blog-slide__image">
+                        <img src="images/course-images-1.webp" alt="#" />
+                      </div>
+                      <div class="blog-slide__text">
+                        <time class="blog-slide__time" datetime="2015-03"
+                          >march mon 2015</time
+                        >
+                        <p class="blog-slide__title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde, quisquam.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="blog-slide__item">
+                      <div class="blog-slide__image">
+                        <img src="images/course-images-2.webp" alt="#" />
+                      </div>
+                      <div class="blog-slide__text">
+                        <time class="blog-slide__time" datetime="2015-03"
+                          >march mon 2015</time
+                        >
+                        <p class="blog-slide__title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde, quisquam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-content__sliders-text">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Praesentium, in.
+                    </p>
+                  </div>
+                  <div class="blog-content__sliders-button">
+                    <a href="#" class="blog-content__sliders-link">read more</a>
+                  </div>
+                </div>
+                <div class="blog-content__sliders">
+                  <div class="blog-slide">
+                    <div class="blog-slide__item">
+                      <div class="blog-slide__image">
+                        <img src="images/course-images-1.webp" alt="#" />
+                      </div>
+                      <div class="blog-slide__text">
+                        <time class="blog-slide__time" datetime="2015-03"
+                          >march mon 2015</time
+                        >
+                        <p class="blog-slide__title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde, quisquam.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="blog-slide__item">
+                      <div class="blog-slide__image">
+                        <img src="images/course-images-2.webp" alt="#" />
+                      </div>
+                      <div class="blog-slide__text">
+                        <time class="blog-slide__time" datetime="2015-03"
+                          >march mon 2015</time
+                        >
+                        <p class="blog-slide__title">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Unde, quisquam.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-content__sliders-text">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Praesentium, in.
+                    </p>
+                  </div>
+                  <div class="blog-content__sliders-button">
+                    <a href="#" class="blog-content__sliders-link">read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrapper-footer">
+      <section class="container">
+        <div class="footer-top">
+          <div class="footer-top__about">
+            <div class="footer-top__heading">
+              <p>about us</p>
+            </div>
+            <div class="footer-top__text">
+              <p class="footer-top__article">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took Lorem
+                Ipsum has been the industry's standard dummy text ever since the
+                1500s, when an unknown printer took he industry's standard dummy
+                text ever since the took
+              </p>
+            </div>
+            <div class="footer-top__socials">
+              <ul class="footer-top__submenu">
+                <li class="footer-top__list">
+                  <a href="https://www.facebook.com/" class="footer-top__link">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="footer-top__list">
+                  <a href="https://www.twitter.com/" class="footer-top__link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="footer-top__list">
+                  <a href="https://www.linkedin.com/" class="footer-top__link">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li class="footer-top__list">
+                  <a href="https://www.google.com/" class="footer-top__link">
+                    <i class="fab fa-google"></i>
+                  </a>
+                </li>
+                <li class="footer-top__list">
+                  <a href="https://www.facebook.com/" class="footer-top__link">
+                    <i class="fas fa-basketball-ball"></i>
+                  </a>
+                </li>
+                <li class="footer-top__list">
+                  <a href="https://www.whatsapp.com/" class="footer-top__link">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-top__opening">
+            <div class="footer-top__heading">opening hours</div>
+            <div class="footer-top__schedule">
+              <div class="footer-top__weeks">
+                <li class="footer-top__weeks-list">
+                  <span>monday</span>
+                  <span>08:00-18:00</span>
+                </li>
+                <li class="footer-top__weeks-list">
+                  <span>tuesday</span>
+                  <span>08:00-18:00</span>
+                </li>
+                <li class="footer-top__weeks-list">
+                  <span>wednesday</span>
+                  <span>08:00-18:00</span>
+                </li>
+                <li class="footer-top__weeks-list">
+                  <span>thursday</span>
+                  <span>08:00-18:00</span>
+                </li>
+                <li class="footer-top__weeks-list">
+                  <span>friday</span>
+                  <span>08:00-18:00</span>
+                </li>
+                <li class="footer-top__weeks-list">
+                  <span>saturday</span>
+                  <span>08:00-13:30</span>
+                </li>
+                <li class="footer-top__weeks-list">
+                  <span>sunday</span>
+                  <span>closed</span>
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="footer-top__contacts">
+            <div class="footer-top__heading">contacts</div>
+            <div class="footer-top__form">
+              <form action="#">
+                <input
+                  class="footer-top__name"
+                  type="text"
+                  placeholder="Name"
+                />
+                <input
+                  class="footer-top__number"
+                  type="text"
+                  placeholder="Phone"
+                />
+                <textarea
+                  class="footer-top__message"
+                  name="Message"
+                  id="msg"
+                  cols="10"
+                  rows="10"
+                  placeholder="message"
+                ></textarea>
+                <button class="footer-top__button">send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper-footer-copr">
+        <div class="container">
+          <div class="footer-copr">
+            <p class="footer-copr__text">
+              all rights reserved &copy learning| designed
+              <span>themengraph</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="libs/slick/js/jquery-3.3.1.js"></script>
+    <script src="libs/slick/js/jquery-migrate-3.1.0.js"></script>
+    <script src="libs/slick/js/slick.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

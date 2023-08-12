@@ -1,0 +1,153 @@
+@import "_variables";
+@import "_fonts";
+@import "_mixins";
+
+.team {
+	padding-top: 60px;
+
+	&__heading {
+		text-align: center;
+		@include aboutBlockfonts($aboutTitlefont, $aboutTitlecolor, uppercase, center);
+		// font-size: 60px;
+		font-size: calc(24px + 36 * (100vw / 1600));
+	}
+
+	@media (min-width: 767px) {
+		.course__heading {
+			text-align: center;
+			font-size: calc(24px + (36 + 36 * 0.7) * ((100vw - 320px) / 1600));
+		}
+	}
+	.dots-style {
+		padding-top: 30px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		position: absolute;
+		top: 0%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		overflow: hidden;
+
+		& button {
+			background-color: #555252;
+			border: none;
+			font-size: 0;
+			height: 3px;
+			width: 42px;
+			outline: none;
+			cursor: pointer;
+			transition: 0.2s ease;
+		}
+
+		& li[class="slick-active"] button {
+			background-color: #ff6600;
+		}
+	}
+
+	&-sliders {
+		padding-top: 50px;
+		padding-bottom: 139px;
+
+		&__image {
+			width: 100%;
+			height: 300px;
+			overflow: hidden;
+			position: relative;
+
+			&:hover .team-sliders__content {
+				transform: translateY(0%);
+			}
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			// justify-content: center;
+			width: 100%;
+			height: 50%;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			background-color: rgba(198, 74, 27, 0.6);
+			transform: translateY(100%);
+			transition: transform 0.5s linear;
+		}
+		&__title {
+			padding-top: 10px;
+			@include blockFonts($navLogofont, $universalColorwhite, capitalize);
+			font-weight: 600;
+			font-size: calc(16px + 6 * (100vw / 1600));
+		}
+
+		@media (min-width: 481px) {
+			.team-sliders__title {
+				font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / 1600));
+			}
+		}
+
+		@media (min-width: 768px) {
+			.team-sliders__title {
+				font-size: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / 1600));
+			}
+		}
+		&__subtitle {
+			padding-top: 10px;
+			@include blockFonts($navLogofont, $universalColorwhite, capitalize);
+			font-size: calc(10px + 4 * (100vw / 1600));
+		}
+		@media (min-width: 768px) {
+			.team-sliders__subtitle {
+				font-size: calc(10px + (4 + 4 * 0.7) * ((100vw - 320px) / 1600));
+			}
+		}
+		&__icons {
+			padding-top: 20px;
+			display: flex;
+		}
+		&__link {
+			padding-left: 10px;
+			padding-right: 10px;
+			i {
+				width: 47px;
+				height: 50px;
+				border: 1px solid;
+				border-radius: 5px;
+				color: #fff;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: all 0.4s linear;
+				&:hover {
+					background-color: #fff;
+					color: rgba(198, 74, 27, 0.6);
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 481px) {
+	.team {
+		padding-top: 80px;
+		&-sliders {
+			padding-top: 60px;
+		}
+	}
+}
+
+@media (min-width: 767px) {
+	.team {
+		padding-top: 130px;
+		&-sliders {
+			padding-top: 98px;
+		}
+	}
+}
